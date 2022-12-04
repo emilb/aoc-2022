@@ -19,8 +19,6 @@ function isOnePairFullyContained(pairTuple) {
   const isContained = (first[0] <= second[0] && first[1] >= second[1])
                    || (second[0] <= first[0] && second[1] >= first[1])
 
-  //console.log(`${first}, ${second} contained: ${isContained}`)
-
   return isContained
 }
 
