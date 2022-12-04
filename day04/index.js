@@ -31,7 +31,10 @@ function isOverlapping(pairTuple) {
   const first = pairTuple[0]
   const second = pairTuple[1]
 
+  // Last element is before first element of other pair
   if (first[1] < second[0] || second[1] < first[0]) return false
+
+  // At least one element is within range of the other pair  
   if (first[0] <= second[0] && first[1] >= second[0]) return true
   if (second[0] <= first[0] && second[1] >= first[0]) return true
 
